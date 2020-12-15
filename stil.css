@@ -1,0 +1,103 @@
+body{
+    background-color:#C2B8B2;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+img{
+    height: ;
+    width: 100%;
+}
+
+nav{
+    position: ;
+    display: flex;
+    justify-content: space-around;
+    background-color: #204B57;
+    top: 0;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav a, .meny .meny-btn {
+    background-color: #204B57;
+    padding: 10px;
+    text-decoration: none;
+    color: lightgray;
+    outline: none;
+    border: none;
+}
+
+nav a:hover, .meny .meny-btn:hover, .meny-innhold a:hover{
+    background-color: #197BBD;
+    color: white;
+}
+
+
+
+.meny {
+    overflow: hidden;
+}
+
+.meny-innhold {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.meny-innhold a {
+    float: none;
+    color: lightgray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+
+.meny:hover .meny-innhold{
+    display: block;
+}
+
+
+
+main{
+    display: grid;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    background-color: #C2B8B2;
+}
+
+main a{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+}
+
+main a:hover{
+    filter:grayscale(10%);
+}
+
+.kol-1 {grid-column: span 1;}
+.kol-2 {grid-column: span 2;}
+.kol-3 {grid-column: span 3;}
+.kol-4 {grid-column: span 4;}
+.kol-5 {grid-column: span 5;}
+.kol-6 {grid-column: span 6;}
+.kol-7 {grid-column: span 7;}
+.kol-8 {grid-column: span 8;}
+.kol-9 {grid-column: span 9;}
+.kol-10 {grid-column: span 10;}
+.kol-11 {grid-column: span 11;}
+.kol-12 {grid-column: span 12;}
+
